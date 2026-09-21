@@ -10,7 +10,7 @@
 
 		<!-- ═══ ★ NuGet Metadata ═══ -->
 		<PackageId>WDesk.SDK</PackageId>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<Authors>you-mountain</Authors>
 		<Description>WDesk Widget SDK — build your own widgets for WDesk</Description>
 		<PackageTags>wdesk;widget;sdk;wpf</PackageTags>
