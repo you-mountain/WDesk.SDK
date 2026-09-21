@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("WDesk Widget SDK — build your own widgets for WDesk")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+368721e307a80670a344842d2503dad1e4d4a580")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df55e326fcb58d9e74e9d7f8d5b218c48bd1d094")]
 [assembly: System.Reflection.AssemblyProductAttribute("WDesk.SDK")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WDesk.SDK")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

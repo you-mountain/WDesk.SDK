@@ -1,5 +1,0 @@
-D:\coding\WDesk\WDesk.SDK\obj\Debug\net8.0\WDesk.SDK.GeneratedMSBuildEditorConfig.editorconfig
-D:\coding\WDesk\WDesk.SDK\obj\Debug\net8.0\WDesk.SDK.AssemblyInfoInputs.cache
-D:\coding\WDesk\WDesk.SDK\obj\Debug\net8.0\WDesk.SDK.AssemblyInfo.cs
-D:\coding\WDesk\WDesk.SDK\obj\Debug\net8.0\WDesk.SDK.csproj.CoreCompileInputs.cache
-D:\coding\WDesk\WDesk.SDK\obj\Debug\net8.0\WDesk.SDK.sourcelink.json
