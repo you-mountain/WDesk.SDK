@@ -75,6 +75,12 @@ namespace WDesk.Core
         void OnActivated(PlacedWidget instance) { }
         void OnDeactivated(PlacedWidget instance) { }
         void ApplySettings(PlacedWidget instance, Dictionary<string, string> settings) { }
+
+        /// <summary>
+        /// ★ ویجت خودش استایل‌های global رو اعمال کنه.
+        /// بعد از ساخت view، این متد صدا زده می‌شه.
+        /// </summary>
+        void ApplyGlobalStyle(FrameworkElement view, PlacedWidget instance) { }
     }
 
     public interface IWidgetWithSettings : IWidget
@@ -119,6 +125,15 @@ namespace WDesk.Core
 
         public virtual IStyleBuilder? GetStyleBuilder(string styleId) => null;
 
+        /// <summary>
+        /// ★ پیاده‌سازی پیش‌فرض: هیچ کاری نمی‌کنه.
+        /// ویجت‌ها می‌تونن override کنن.
+        /// </summary>
+        public virtual void ApplyGlobalStyle(FrameworkElement view, PlacedWidget instance)
+        {
+            // پیاده‌سازی پیش‌فرض: هیچ کاری نمی‌کنه
+        }
+
         public string GetCurrentStyle(PlacedWidget instance)
         {
             if (instance.Settings.TryGetValue("style", out var s) &&
@@ -140,7 +155,16 @@ namespace WDesk.Core
                     builder = GetStyleBuilder(first.Id);
             }
 
-            return builder?.Build(instance) ?? new Grid();
+            var view = builder?.Build(instance) ?? new Grid();
+
+            // ★ بعد از ساخت، ApplyGlobalStyle رو صدا بزن
+            try
+            {
+                ApplyGlobalStyle(view, instance);
+            }
+            catch { }
+
+            return view;
         }
 
         public virtual FrameworkElement CreateSettingsView(
