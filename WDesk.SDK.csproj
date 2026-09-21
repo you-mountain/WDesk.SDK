@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<AssemblyName>WDesk.SDK</AssemblyName>
+		<RootNamespace>WDesk.Core</RootNamespace>
+
+		<!-- ═══ ★ NuGet Metadata ═══ -->
+		<PackageId>WDesk.SDK</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>you-mountain</Authors>
+		<Description>WDesk Widget SDK — build your own widgets for WDesk</Description>
+		<PackageTags>wdesk;widget;sdk;wpf</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/you-mountain/WDesk.SDK</RepositoryUrl>
+
+		<!-- ★ تولید NuGet package هنگام Build -->
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+</Project>
