@@ -1,0 +1,5 @@
+D:\coding\WDesk\WDesk.SDK\bin\Release\publish\WDesk.SDK.dll
+D:\coding\WDesk\WDesk.SDK\bin\Release\publish\WDesk.SDK.deps.json
+D:\coding\WDesk\WDesk.SDK\bin\Release\publish\WDesk.SDK.pdb
+D:\coding\WDesk\WDesk.SDK\bin\Release\publish\Microsoft.Windows.SDK.NET.dll
+D:\coding\WDesk\WDesk.SDK\bin\Release\publish\WinRT.Runtime.dll
